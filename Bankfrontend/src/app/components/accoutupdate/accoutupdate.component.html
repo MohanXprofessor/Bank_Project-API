@@ -1,0 +1,52 @@
+<div class="backimages">
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form (ngSubmit)="onUpdate()">
+      <!-- Disabled Account Number Field -->
+
+      <div class="mb-3">
+        <label for="accountHolderName" class="form-label text-white"
+          >Account No</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="accountNo"
+          name="accountHolderName"
+          placeholder="accountNo"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="accountHolderName" class="form-label text-white"
+          >Name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="accountHolderName"
+          name="accountHolderName"
+          placeholder="Enter name"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="accountBalance" class="form-label text-white"
+          >Initial Amount</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="accountBalance"
+          name="accountBalance"
+          placeholder="Enter amount"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+</div>

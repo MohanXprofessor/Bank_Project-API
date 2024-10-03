@@ -1,0 +1,37 @@
+<!-- Table -->
+<table class="table table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Account No</th>
+      <th>Account Balance</th>
+      <th colspan="3">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.accountHolderName }}</td>
+      <td>{{ account.accountNo }}</td>
+
+      <td>&#8377;&nbsp;{{ account.accountBalance }}</td>
+      <!-- <td>
+        <button (click)="accountUpdate(account.accountNo)" class="btn btn-danger">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+      </td> -->
+      <td>
+        <button (click)="viewAccounts(account.accountNo)" class="btn btn-info">
+          <i class="bi bi-person-vcard-fill"></i>
+        </button>
+      </td>
+      <td>
+        <button
+          (click)="deleteaccount(account.accountNo)"
+          class="btn btn-danger"
+        >
+          <i class="bi bi-trash3"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,34 @@
+<div class="backimages">
+  <div class="form-container">
+    <h2>Withdraw Amount</h2>
+    <form (ngSubmit)="onsubmit()">
+      <div class="mb-3">
+        <label for="accountNo" class="form-label text-white"
+          >Account Number</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          name="accountNo"
+          id="accountNo"
+          placeholder="Enter account number"
+          [(ngModel)]="waccount.accountNo"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="withdrawAmount" class="form-label text-white"
+          >Withdraw Amount</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="withdrawAmount"
+          name="withdrawAmount"
+          placeholder="Enter amount to withdraw"
+          [(ngModel)]="withdrawAmount"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

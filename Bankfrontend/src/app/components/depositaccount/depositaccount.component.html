@@ -1,0 +1,31 @@
+<div class="backimages">
+  <div class="form-container">
+    <h2>Deposit Amount</h2>
+    <form (ngSubmit)="onsubmit()">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="accountNo"
+          name="accountNo"
+          placeholder="Enter account number"
+          [(ngModel)]="daccount.accountNo"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="depositAmount" class="form-label text-white"
+          >Deposit Amount</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          name="depositAmount"
+          id="depositAmount"
+          placeholder="Enter amount to deposit"
+          [(ngModel)]="daccount.accountBalance"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div *ngIf="account">
+  <h2>Account Details</h2>
+  <p><strong>Account No:</strong> {{ account.accountNo }}</p>
+  <p><strong>Account Holder Name:</strong> {{ account.accountHolderName }}</p>
+  <p><strong>Account Balance:</strong> {{ account.accountBalance }}</p>
+  <br />
+  <button class="btn btn-primary" (click)="backrecord()">Back</button>
+</div>
+
+<!-- Other code to display the list of accounts -->
